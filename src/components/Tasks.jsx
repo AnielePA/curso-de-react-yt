@@ -25,14 +25,10 @@ function Tasks(props) {
           >
             {task.title}
           </button>
-          <Button
-            onClick={() => onSeeDetailsClick(task)}
-          >
+          <Button onClick={() => onSeeDetailsClick(task)}>
             <ChevronsRightIcon />
           </Button>
-          <Button
-            onClick={() => props.onDeleteTask(task.id)}
-          >
+          <Button onClick={() => props.onDeleteTask(task.id)}>
             <TrashIcon />
           </Button>
         </li>
